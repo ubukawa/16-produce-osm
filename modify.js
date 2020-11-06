@@ -386,7 +386,7 @@ const lut = {
     delete f.properties['fclass']
     f.tippecanoe = {
     layer: 'poi',
-    minzoom: 15,
+    minzoom: 13,
     maxzoom: 15
     }
   return f
@@ -667,7 +667,7 @@ const lut = {
   osm_planet_heritage_area_p: f => {
     f.tippecanoe = {
       layer: 'heritage',
-      minzoom: 15,
+      minzoom: 13,
       maxzoom: 15
     }
     return f 
