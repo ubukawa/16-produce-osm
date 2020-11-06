@@ -62,24 +62,24 @@ const minzoomRoad = (f) => {
     case 'living_street':
     case 'steps':
     case 'bridleway':
-      return 15
+      return 13
     case 'residential':
     case 'service':
     case 'track':
     case 'unclassified':
-      return 14
+      return 11
     case 'road':
     case 'tertiary_link':
-      return 13
+      return 10
     case 'tertiary':
     case 'secondary_link':
-      return 12
+      return 9
     case 'secondary':
     case 'primary_link':
-      return 11
+      return 8
     case 'primary':
     case 'trunk_link':
-      return 10
+      return 8
     case 'trunk':
     case 'motorway_link':
       return 8
@@ -98,11 +98,11 @@ const minzoomWater = (f) => {
   } else if (f.properties.natural === 'wetland') {
     return 8
   } else if (f.properties.waterway === 'riverbank') {
-    return 15
+    return 9
   } else if (f.properties.landuse === 'basin') {
-    return 13
+    return 9
   } else if (f.properties.landuse === 'reservoir') {
-    return 13
+    return 9
   } else {
     throw new Error(`monzoomWater: ${f.properties}`)
   }
