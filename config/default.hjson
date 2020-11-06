@@ -1,0 +1,63 @@
+{
+  host: localhost
+  unixUser: test\taro.ubukawa
+  wtpsThreshold: 50
+  monitorPeriod: 10
+  Z: 6
+  concurrent: 5
+  maxRetries: 5
+  retryDelay: 5000
+  port: 5432
+  dbUser: postgress
+  dbPassword: ABCDEFG
+  relations: [
+    osm_base::osm_planet_worship_area_p
+    osm_base::osm_planet_buildings
+    osm_base::osm_planet_ferries
+    osm_base::osm_planet_heritage_area_p
+    osm_base::osm_planet_highway_areas
+    osm_base::osm_planet_landuse_natural_large
+    osm_base::osm_planet_landuse_natural_medium
+    osm_base::osm_planet_landuse_park_reserve
+    osm_base::osm_planet_landuse_points
+    osm_base::osm_planet_landuse_urban
+    osm_base::osm_planet_major_roads
+    osm_base::osm_planet_minor_roads
+    osm_base::osm_planet_other_area_p
+    osm_base::osm_planet_other_buildings
+    osm_base::osm_planet_places
+    osm_base::osm_planet_places_areas
+    osm_base::osm_planet_pois_heritage
+    osm_base::osm_planet_pois_other
+    osm_base::osm_planet_pois_public
+    osm_base::osm_planet_pois_services
+    osm_base::osm_planet_pois_traffic
+    osm_base::osm_planet_pois_transport
+    osm_base::osm_planet_pois_water
+    osm_base::osm_planet_pois_worship
+    osm_base::osm_planet_public_area_p
+    osm_base::osm_planet_railways
+    osm_base::osm_planet_runways
+    osm_base::osm_planet_services_area_p
+    osm_base::osm_planet_services_areas
+    osm_base::osm_planet_transport_areas
+    osm_base::osm_planet_transport_area_p
+    osm_base::osm_planet_water
+    osm_base::osm_planet_waterways_large
+    osm_base::osm_planet_waterways_small
+  ]
+  defaultDate: 2020-10-01
+  mbtilesDir: /data/mbtiles/osm_tile
+  propertyBlacklist: [
+    description
+    fid
+    fid_1
+    globalid
+    id
+    objectid_1
+    osm_id
+    pseudoarea
+  ]
+  spinnerString: 18
+  fetchSize: 300
+}
